@@ -417,6 +417,10 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
   .pv .sec, .pv .card, .pv .plano, .pv .pc { break-inside:avoid; }
   .pv .ficha { position:static; }
 }
+.pv .planos.unico { grid-template-columns:minmax(0,560px); justify-content:center; }
+.pv .planos.unico .plano { cursor:default; }
+.pv .planos.unico .plano:hover { transform:none; }
+.pv .impl-de { color:var(--txt); opacity:.7; font-weight:500; text-decoration:line-through; }
 </style>
 
 <div class="pv">
@@ -438,11 +442,11 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
       <li>Você lidera com perguntas. Afirme, pergunte "faz sentido para vocês?" e fique em silêncio.</li></ul></div>
     <span class="dg-etiqueta">Proposta para a Chiquetti &amp; Dalvesco · outubro de 2026</span>
     <h1>Mais fornecedores na mesa, <span class="dg-destaque">mais economia para cada obra</span></h1>
-    <p class="sub">Uma assistente de IA para o Fábio e outra para o Gustavo. Ela assume a parte manual das 200 a 300 solicitações do mês, do print no WhatsApp ao mapa de cotação, e renova a base de fornecedores a cada cotação. O time fica com a decisão e com a negociação dos itens que pesam no custo da obra.</p>
+    <p class="sub">Uma assistente de IA trabalhando para o Fábio e o Gustavo. Ela assume a parte manual das 200 a 300 solicitações do mês, do print no WhatsApp ao mapa de cotação, e renova a base de fornecedores a cada cotação. O time fica com a decisão e com a negociação dos itens que pesam no custo da obra.</p>
     <div class="kpis">
-      <div class="kpi"><b data-o="h_horasAno">5.040 h</b><span>de comprador por ano só cotando, no ritmo de hoje</span></div>
-      <div class="kpi"><b data-o="h_retorno">5,0x</b><span>de retorno mensal no cenário recomendado</span></div>
-      <div class="kpi"><b data-o="h_payback">~6 dias</b><span>para a implantação se pagar</span></div>
+      <div class="kpi"><b data-o="h_horasAno">2.160 h</b><span>de comprador por ano só cotando, no ritmo de hoje</span></div>
+      <div class="kpi"><b data-o="h_retorno">6,6x</b><span>de retorno mensal para cada real da mensalidade</span></div>
+      <div class="kpi"><b data-o="h_payback">~8 dias</b><span>para a implantação se pagar</span></div>
     </div>
     <div class="scrollhint"><svg aria-hidden="true" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.35352,12.35352l-6,6a.49984.49984,0,0,1-.707,0l-6-6a.5.5,0,0,1,.707-.707L11.5,16.793V6a.5.5,0,0,1,1,0V16.793l5.14648-5.14649a.5.5,0,0,1,.707.707Z"/></svg> Role para acompanhar o raciocínio</div>
   </div>
@@ -505,11 +509,11 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
       <h3>O custo de ficar como está, nos próximos 12 meses</h3>
       <p class="fonte">O que o time de compras e as obras deixam de ganhar sem a assistente. Estimativa com os números da Chiquetti &amp; Dalvesco, na mesma base da conta de retorno da seção 7. Os valores mudam quando ajustamos os campos das seções 4 e 7.</p>
       <div class="bars">
-        <div class="bar"><div class="lbl">Tempo<small>horas de cotação que a assistente assumiria</small></div><div class="trk"><div class="fill" data-bar="b_tempo"></div></div><div class="val" data-o="c_tempo">3.360 de 5.040 h</div></div>
-        <div class="bar"><div class="lbl">Gente<small>custo dessas horas</small></div><div class="trk"><div class="fill" data-bar="b_gente"></div></div><div class="val" data-o="c_gente">R$ 96 mil</div></div>
-        <div class="bar"><div class="lbl">Dinheiro<small>saving não capturado pelas obras</small></div><div class="trk"><div class="fill" data-bar="b_din"></div></div><div class="val" data-o="c_din">R$ 576 mil</div></div>
+        <div class="bar"><div class="lbl">Tempo<small>horas de cotação que a assistente assumiria</small></div><div class="trk"><div class="fill" data-bar="b_tempo"></div></div><div class="val" data-o="c_tempo">720 de 2.160 h</div></div>
+        <div class="bar"><div class="lbl">Gente<small>custo dessas horas</small></div><div class="trk"><div class="fill" data-bar="b_gente"></div></div><div class="val" data-o="c_gente">R$ 21 mil</div></div>
+        <div class="bar"><div class="lbl">Dinheiro<small>saving não capturado pelas obras</small></div><div class="trk"><div class="fill" data-bar="b_din"></div></div><div class="val" data-o="c_din">R$ 216 mil</div></div>
       </div>
-      <div class="total12"><span>Fica na mesa em 12 meses, somando gente e dinheiro<small data-o="c_pessoas" style="display:block;color:var(--txt);font-size:13px">as horas equivalem a 1,6 pessoa cotando o ano todo</small></span><b data-o="c_total">R$ 672 mil</b></div>
+      <div class="total12"><span>Fica na mesa em 12 meses, somando gente e dinheiro<small data-o="c_pessoas" style="display:block;color:var(--txt);font-size:13px">as horas equivalem a 0,3 pessoa cotando o ano todo</small></span><b data-o="c_total">R$ 237 mil</b></div>
     </div>
   </div>
 </section>
@@ -519,7 +523,7 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
   <svg fill="currentColor" aria-hidden="true" class="dg-grafismo dg-grafismo--rodape" viewBox="0 0 158 159"  xmlns="http://www.w3.org/2000/svg"><path d="M140.81 62.1455L95.1728 74.3774C90.0026 75.7646 85.291 78.4815 81.5079 82.2646C77.7248 86.0476 75.0079 90.7593 73.6208 95.9295L61.3889 141.567L77.1631 145.797L89.0626 101.386L123.729 136.053L135.285 124.497L100.618 89.8307L145.029 77.9312L140.799 62.157L140.81 62.1455Z" fill="currentColor"/><path d="M96.6517 17.2302L84.4198 62.8677C83.0326 68.0379 80.3157 72.7496 76.5326 76.5326C72.7496 80.3157 68.0379 83.0326 62.8677 84.4198L17.2302 96.6517L13 80.8774L57.4109 68.978L22.7557 34.2998L34.3113 22.7443L68.978 57.4109L80.866 13L96.6402 17.2302H96.6517Z" fill="currentColor"/></svg>
   <div class="wrap">
     <div class="cue"><b>Descrever a assistente</b>
-      <ul><li>Apresente como uma contratação: "Pensem nela como uma assistente para o Fábio e outra para o Gustavo."</li>
+      <ul><li>Apresente como uma contratação: "Pensem nela como uma assistente para o Fábio e o Gustavo, atendendo as quatro obras."</li>
       <li>Pergunte: "Qual dessas tarefas o time faria primeiro? A cobrança de fornecedor?"</li>
       <li>Expectativa certa, como alinhado na demonstração: ela vai até o mapa de cotação. O pedido continua sendo gerado pelo comprador no Sienge.</li>
       <li>A avaliação interna de fornecedores com critérios próprios e os indicadores de compras que o Evandro pediu não estão no plano. Não prometa.</li></ul></div>
@@ -574,14 +578,14 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
       <div class="passo rv"><span class="n">1</span><p>Salário de um comprador ou auxiliar<small>piso da categoria na construção · <em class="conf">a confirmar</em></small></p><span class="v" data-o="a_sal">R$ 2.800</span></div>
       <div class="passo rv"><span class="n">2</span><p>Encargos, 13º, férias e benefícios<small>somados ao salário</small></p><span class="v" data-o="a_enc">+ R$ 2.240</span></div>
       <div class="passo rv"><span class="n">3</span><p>Custo real para a empresa, por mês<small>fora recrutamento, treinamento e o risco dos 90 dias de experiência</small></p><span class="v" data-o="a_custo">R$ 5.040</span></div>
-      <div class="passo rv"><span class="n">4</span><p>Quanto uma pessoa consegue negociar<small data-o="a_capTxt">176 h por mês, 3 h por cotação, 4 fornecedores em cada</small><small>horas por cotação <em class="conf">a confirmar</em></small></p><span class="v" data-o="a_capH">~205 por mês</span></div>
+      <div class="passo rv"><span class="n">4</span><p>Quanto uma pessoa consegue negociar<small data-o="a_capTxt">176 h por mês, 3,0 h por cotação, 4 fornecedores em cada</small><small>horas por cotação <em class="conf">a confirmar</em></small></p><span class="v" data-o="a_capH">~235 por mês</span></div>
     </div>
     <div class="refbox">
       <div class="card ref rv">
         <span class="dg-etiqueta">A referência</span>
         <p class="ref-lbl">Cada negociação feita por uma pessoa custa</p>
-        <b data-o="a_convH">R$ 24,55</b>
-        <p class="ref-conta" data-o="a_refTxt">R$ 5.040 por mês ÷ ~205 negociações por mês</p>
+        <b data-o="a_convH">R$ 21,48</b>
+        <p class="ref-conta" data-o="a_refTxt">R$ 5.040 por mês ÷ ~235 negociações por mês</p>
       </div>
       <div class="ajustes rv" style="margin-top:0"><b><svg aria-hidden="true" width="15" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16,5.5h2.91058A9.4877,9.4877,0,0,0,2.5,12a.5.5,0,0,1-1,0,10.49268,10.49268,0,0,1,18-7.33783V2a.5.5,0,0,1,1,0V6a.49971.49971,0,0,1-.5.5H16a.5.5,0,0,1,0-1Zm6,6a.49971.49971,0,0,0-.5.5A9.4877,9.4877,0,0,1,5.08942,18.5H8a.5.5,0,0,0,0-1H4a.49971.49971,0,0,0-.5.5v4a.5.5,0,0,0,1,0V19.33783A10.49268,10.49268,0,0,0,22.5,12,.49971.49971,0,0,0,22,11.5Z"/></svg> Ajuste com os números de vocês</b>
         <div class="campos">
@@ -598,17 +602,17 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
       <h3 class="h-dobra">A mesma negociação, <span class="dg-destaque">por uma fração do custo</span></h3>
       <div class="card unit rv">
         <div class="unit-top">
-          <div><span class="dg-etiqueta">Com a dgenny, no plano recomendado</span><b data-o="a_convA">R$ 10,50</b><p>por negociação, com busca de fornecedores, follow-up, negociação e mapa incluídos</p></div>
-          <div class="unit-econ"><b data-o="a_econ">57% menos</b><span>que a mesma negociação feita por uma pessoa</span></div>
+          <div><span class="dg-etiqueta">Com a dgenny, no plano proposto</span><b data-o="a_convA">R$ 12,00</b><p>por negociação, com busca de fornecedores, follow-up, negociação e mapa incluídos</p></div>
+          <div class="unit-econ"><b data-o="a_econ">44% menos</b><span>que a mesma negociação feita por uma pessoa</span></div>
         </div>
-        <div class="cbar"><span>Pessoa</span><div class="ctrk"><div class="cfill h" style="width:100%"></div></div><b data-o="a_convH2">R$ 24,55</b></div>
-        <div class="cbar"><span>dgenny</span><div class="ctrk"><div class="cfill a" data-cbar="a" style="width:43%"></div></div><b data-o="a_convA2">R$ 10,50</b></div>
+        <div class="cbar"><span>Pessoa</span><div class="ctrk"><div class="cfill h" style="width:100%"></div></div><b data-o="a_convH2">R$ 21,48</b></div>
+        <div class="cbar"><span>dgenny</span><div class="ctrk"><div class="cfill a" data-cbar="a" style="width:43%"></div></div><b data-o="a_convA2">R$ 12,00</b></div>
       </div>
       <div class="volume rv">
-        <div class="passo"><span class="n">5</span><p>O pacote do plano recomendado<small data-o="a_pacTxt">repartido entre 3 assistentes trabalhando em paralelo, 24 horas por dia</small></p><span class="v" data-o="a_pac">500 negociações</span></div>
-        <div class="passo"><span class="n">6</span><p>Pessoas para fazer o mesmo volume<small data-o="a_pessoasTxt">500 negociações por mês ÷ ~205 por pessoa</small></p><span class="v" data-o="a_pessoasCusto">R$ 12 mil/mês</span></div>
+        <div class="passo"><span class="n">5</span><p>O pacote do plano proposto<small data-o="a_pacTxt">com 1 assistente conversando com vários fornecedores de uma vez, 24 horas por dia</small></p><span class="v" data-o="a_pac">250 negociações</span></div>
+        <div class="passo"><span class="n">6</span><p>Pessoas para fazer o mesmo volume<small data-o="a_pessoasTxt">250 negociações por mês ÷ ~235 por pessoa = 1,1 pessoas</small></p><span class="v" data-o="a_pessoasCusto">R$ 5 mil/mês</span></div>
       </div>
-      <div class="card conclusao rv">O mesmo volume de trabalho que exigiria <span data-o="a_pessoasN">2 pessoas</span> sai por <span data-o="a_invest">R$ 5.250 por mês</span>. E o time atual continua no controle.</div>
+      <div class="card conclusao rv">O mesmo volume de trabalho que exigiria <span data-o="a_pessoasN">1,1 pessoa</span> sai por <span data-o="a_invest">R$ 3.000 por mês</span>. E o time atual continua no controle.</div>
     </div>
   </div>
 </section>
@@ -618,49 +622,35 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
   <svg fill="currentColor" aria-hidden="true" class="dg-assinatura" viewBox="0 0 158 159"  xmlns="http://www.w3.org/2000/svg"><path d="M140.81 62.1455L95.1728 74.3774C90.0026 75.7646 85.291 78.4815 81.5079 82.2646C77.7248 86.0476 75.0079 90.7593 73.6208 95.9295L61.3889 141.567L77.1631 145.797L89.0626 101.386L123.729 136.053L135.285 124.497L100.618 89.8307L145.029 77.9312L140.799 62.157L140.81 62.1455Z" fill="currentColor"/><path d="M96.6517 17.2302L84.4198 62.8677C83.0326 68.0379 80.3157 72.7496 76.5326 76.5326C72.7496 80.3157 68.0379 83.0326 62.8677 84.4198L17.2302 96.6517L13 80.8774L57.4109 68.978L22.7557 34.2998L34.3113 22.7443L68.978 57.4109L80.866 13L96.6402 17.2302H96.6517Z" fill="currentColor"/></svg>
   <div class="wrap">
     <div class="cue"><b>Investimento: paralelismo e volume</b>
-      <ul><li>Explique as duas frentes: assistentes dão paralelismo, o pacote define o volume. Um não depende do outro.</li><li>Recomende a do meio: "uma assistente para o Fábio e outra para o Gustavo, com saldo para o ano todo".</li>
-      <li>"Qual destas conversa com o plano de vocês para os próximos 12 meses?" Clique na escolhida: o retorno abaixo acompanha.</li>
-      <li>Se lembrarem das 12.000 conversas da proposta anterior: o modelo mudou para pacote de negociações. O recomendado tem a mesma mensalidade, e 300 por mês cobrem cerca de 75 cotações com 4 fornecedores.</li>
-      <li>Se quiserem chamar 10 a 15 fornecedores em toda cotação, o volume dobra: aí o Equipe, com 500 por mês, é o plano certo.</li>
-      <li>Se o preço pesar, reduza o volume, não dê desconto. Se precisar ceder, ceda na implantação e sempre em troca de algo.</li></ul></div>
+      <ul><li>Explique as duas frentes: a assistente dá o paralelismo, o pacote define o volume.</li>
+      <li>Traduza o pacote: "250 negociações cobrem cerca de 60 cotações por mês com 4 fornecedores, ou 25 cotações com 10 fornecedores cada."</li>
+      <li>A implantação de R$ 4.000 é condição desta proposta, em troca da assinatura até 04/11. Depois disso, volta para R$ 6.000. Não ceda na mensalidade.</li>
+      <li>Se lembrarem das 12.000 conversas da proposta anterior: o modelo mudou para pacote de negociações, e a mensalidade caiu de R$ 4.000 para R$ 3.000.</li>
+      <li>Se pedirem uma assistente para cada um: a segunda entra por R$ 400 por mês, sem mudar o pacote.</li></ul></div>
     <div class="num"><b>5</b> Investimento</div>
-    <h2>Quantas assistentes, <span class="dg-destaque">quanto volume</span></h2>
-    <p class="lead">O plano é montado em duas frentes independentes, e não por obra. As assistentes definem quantas frentes de compra trabalham em paralelo. O pacote de negociações é da empresa, e qualquer assistente consome do mesmo saldo, que vale pelo contrato inteiro.</p>
-    <div class="planos">
-      <div class="plano rv" data-plano="1" tabindex="0" role="button">
-        <h3>Começar com uma</h3><p class="para">Plano Essencial. Uma assistente para o compras, dividida entre o Fábio e o Gustavo.</p>
+    <h2>Uma assistente, <span class="dg-destaque">volume para o ano todo</span></h2>
+    <p class="lead">O plano é montado em duas frentes, e não por obra. A assistente define quantas frentes de compra trabalham em paralelo. O pacote de negociações é da empresa e vale pelo contrato inteiro, para acompanhar a fase de cada obra.</p>
+    <div class="planos unico">
+      <div class="plano sel rv" data-plano="1">
+        <span class="rec">Plano proposto</span>
+        <h3>Plano Essencial</h3><p class="para">Uma assistente para o compras da Chiquetti &amp; Dalvesco, trabalhando para o Fábio e o Gustavo nas quatro obras.</p>
         <div class="asst"><i><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,4.5H12.5V3a.5.5,0,0,0-1,0V4.5H7A2.50231,2.50231,0,0,0,4.5,7v9A2.50231,2.50231,0,0,0,7,18.5H9.73242L11.584,21.27734a.5.5,0,0,0,.832,0L14.26758,18.5H17A2.50231,2.50231,0,0,0,19.5,16V7A2.50231,2.50231,0,0,0,17,4.5ZM18.5,16A1.50164,1.50164,0,0,1,17,17.5H14a.50135.50135,0,0,0-.416.22266L12,20.09863l-1.584-2.376A.50135.50135,0,0,0,10,17.5H7A1.50164,1.50164,0,0,1,5.5,16V14.5h13Zm0-2.5H5.5V7A1.50164,1.50164,0,0,1,7,5.5H17A1.50164,1.50164,0,0,1,18.5,7ZM10,10A1,1,0,1,1,9,9,1,1,0,0,1,10,10Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,16,10ZM2.5,8v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Zm20,0v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Z"/></svg></i></div>
-        <div class="conv">250 negociações/mês<small>3.000 no ano, saldo livre · 1 assistente</small></div>
-        <div class="preco"><b>R$ 3.000</b> <span>/mês</span><br><span>R$ 12,00 por negociação · implantação <b style="color:var(--rosa)">R$ 6.000</b> · números da dgenny opcionais, R$ 40 cada</span></div>
-      </div>
-      <div class="plano sel rv" data-plano="2" tabindex="0" role="button">
-        <span class="rec">Recomendado</span>
-        <h3>Uma para cada um</h3><p class="para">Plano Essencial. Uma assistente para o Fábio e outra para o Gustavo, cada uma com a sua fila.</p>
-        <div class="asst"><i><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,4.5H12.5V3a.5.5,0,0,0-1,0V4.5H7A2.50231,2.50231,0,0,0,4.5,7v9A2.50231,2.50231,0,0,0,7,18.5H9.73242L11.584,21.27734a.5.5,0,0,0,.832,0L14.26758,18.5H17A2.50231,2.50231,0,0,0,19.5,16V7A2.50231,2.50231,0,0,0,17,4.5ZM18.5,16A1.50164,1.50164,0,0,1,17,17.5H14a.50135.50135,0,0,0-.416.22266L12,20.09863l-1.584-2.376A.50135.50135,0,0,0,10,17.5H7A1.50164,1.50164,0,0,1,5.5,16V14.5h13Zm0-2.5H5.5V7A1.50164,1.50164,0,0,1,7,5.5H17A1.50164,1.50164,0,0,1,18.5,7ZM10,10A1,1,0,1,1,9,9,1,1,0,0,1,10,10Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,16,10ZM2.5,8v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Zm20,0v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Z"/></svg></i><i><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,4.5H12.5V3a.5.5,0,0,0-1,0V4.5H7A2.50231,2.50231,0,0,0,4.5,7v9A2.50231,2.50231,0,0,0,7,18.5H9.73242L11.584,21.27734a.5.5,0,0,0,.832,0L14.26758,18.5H17A2.50231,2.50231,0,0,0,19.5,16V7A2.50231,2.50231,0,0,0,17,4.5ZM18.5,16A1.50164,1.50164,0,0,1,17,17.5H14a.50135.50135,0,0,0-.416.22266L12,20.09863l-1.584-2.376A.50135.50135,0,0,0,10,17.5H7A1.50164,1.50164,0,0,1,5.5,16V14.5h13Zm0-2.5H5.5V7A1.50164,1.50164,0,0,1,7,5.5H17A1.50164,1.50164,0,0,1,18.5,7ZM10,10A1,1,0,1,1,9,9,1,1,0,0,1,10,10Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,16,10ZM2.5,8v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Zm20,0v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Z"/></svg></i></div>
-        <div class="conv">300 negociações/mês<small>3.600 no ano, saldo livre · 2 assistentes</small></div>
-        <div class="preco"><b>R$ 4.000</b> <span>/mês</span><br><span>1 assistente inclusa + 1 adicional (R$ 400) · implantação <b style="color:var(--rosa)">R$ 6.000</b> · números da dgenny opcionais, R$ 40 cada</span></div>
-      </div>
-      <div class="plano rv" data-plano="3" tabindex="0" role="button">
-        <h3>Espaço para crescer</h3><p class="para">Plano Equipe. Três assistentes e o dobro de volume, para chamar mais fornecedores por cotação e receber as próximas obras.</p>
-        <div class="asst"><i><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,4.5H12.5V3a.5.5,0,0,0-1,0V4.5H7A2.50231,2.50231,0,0,0,4.5,7v9A2.50231,2.50231,0,0,0,7,18.5H9.73242L11.584,21.27734a.5.5,0,0,0,.832,0L14.26758,18.5H17A2.50231,2.50231,0,0,0,19.5,16V7A2.50231,2.50231,0,0,0,17,4.5ZM18.5,16A1.50164,1.50164,0,0,1,17,17.5H14a.50135.50135,0,0,0-.416.22266L12,20.09863l-1.584-2.376A.50135.50135,0,0,0,10,17.5H7A1.50164,1.50164,0,0,1,5.5,16V14.5h13Zm0-2.5H5.5V7A1.50164,1.50164,0,0,1,7,5.5H17A1.50164,1.50164,0,0,1,18.5,7ZM10,10A1,1,0,1,1,9,9,1,1,0,0,1,10,10Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,16,10ZM2.5,8v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Zm20,0v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Z"/></svg></i><i><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,4.5H12.5V3a.5.5,0,0,0-1,0V4.5H7A2.50231,2.50231,0,0,0,4.5,7v9A2.50231,2.50231,0,0,0,7,18.5H9.73242L11.584,21.27734a.5.5,0,0,0,.832,0L14.26758,18.5H17A2.50231,2.50231,0,0,0,19.5,16V7A2.50231,2.50231,0,0,0,17,4.5ZM18.5,16A1.50164,1.50164,0,0,1,17,17.5H14a.50135.50135,0,0,0-.416.22266L12,20.09863l-1.584-2.376A.50135.50135,0,0,0,10,17.5H7A1.50164,1.50164,0,0,1,5.5,16V14.5h13Zm0-2.5H5.5V7A1.50164,1.50164,0,0,1,7,5.5H17A1.50164,1.50164,0,0,1,18.5,7ZM10,10A1,1,0,1,1,9,9,1,1,0,0,1,10,10Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,16,10ZM2.5,8v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Zm20,0v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Z"/></svg></i><i><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,4.5H12.5V3a.5.5,0,0,0-1,0V4.5H7A2.50231,2.50231,0,0,0,4.5,7v9A2.50231,2.50231,0,0,0,7,18.5H9.73242L11.584,21.27734a.5.5,0,0,0,.832,0L14.26758,18.5H17A2.50231,2.50231,0,0,0,19.5,16V7A2.50231,2.50231,0,0,0,17,4.5ZM18.5,16A1.50164,1.50164,0,0,1,17,17.5H14a.50135.50135,0,0,0-.416.22266L12,20.09863l-1.584-2.376A.50135.50135,0,0,0,10,17.5H7A1.50164,1.50164,0,0,1,5.5,16V14.5h13Zm0-2.5H5.5V7A1.50164,1.50164,0,0,1,7,5.5H17A1.50164,1.50164,0,0,1,18.5,7ZM10,10A1,1,0,1,1,9,9,1,1,0,0,1,10,10Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,16,10ZM2.5,8v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Zm20,0v4a.5.5,0,0,1-1,0V8a.5.5,0,0,1,1,0Z"/></svg></i></div>
-        <div class="conv">500 negociações/mês<small>6.000 no ano, saldo livre · 3 assistentes incluídas</small></div>
-        <div class="preco"><b>R$ 5.250</b> <span>/mês</span><br><span>R$ 10,50 por negociação · implantação <b style="color:var(--rosa)">R$ 6.000</b> · números da dgenny opcionais, R$ 40 cada</span></div>
+        <div class="conv">250 negociações/mês<small>3.000 no contrato de 12 meses, saldo livre entre os meses · 1 assistente</small></div>
+        <div class="preco"><b>R$ 3.000</b> <span>/mês</span><br><span>R$ 12,00 por negociação · implantação <s class="impl-de">R$ 6.000</s> <b style="color:var(--rosa)">R$ 4.000</b>, uma única vez · números da dgenny opcionais, R$ 40 cada</span></div>
       </div>
     </div>
-    <div class="card paral rv"><span class="dg-icone"><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9,1.5A5.5,5.5,0,1,0,14.5,7,5.50654,5.50654,0,0,0,9,1.5Zm0,10A4.5,4.5,0,1,1,13.5,7,4.50491,4.50491,0,0,1,9,11.5ZM1.5,22V20A4.50491,4.50491,0,0,1,6,15.5h6A4.50491,4.50491,0,0,1,16.5,20v2a.5.5,0,0,1-1,0V20A3.50424,3.50424,0,0,0,12,16.5H6A3.50424,3.50424,0,0,0,2.5,20v2a.5.5,0,0,1-1,0Zm13-10a.49971.49971,0,0,1,.5-.5,4.5,4.5,0,0,0,0-9,.5.5,0,0,1,0-1,5.5,5.5,0,0,1,0,11A.49971.49971,0,0,1,14.5,12Zm7,10V20A3.50424,3.50424,0,0,0,18,16.5a.5.5,0,0,1,0-1A4.50491,4.50491,0,0,1,22.5,20v2a.5.5,0,0,1-1,0Z"/></svg></span><div><h3 style="font-size:17px;margin-bottom:4px">Por que mais de uma assistente</h3><p style="color:var(--txt);margin:0">Cada assistente tem o próprio número de WhatsApp e trabalha para um comprador. Ela conversa com vários fornecedores de uma vez, mas mantém uma negociação por fornecedor. Se duas requisições precisam da mesma indústria, a segunda entra na fila daquela assistente até a primeira terminar. Com uma assistente para o Fábio e outra para o Gustavo, cada um tem a sua fila, e as solicitações das quatro obras andam sem esperar uma pela outra.</p></div></div>
+    <div class="card paral rv"><span class="dg-icone"><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9,1.5A5.5,5.5,0,1,0,14.5,7,5.50654,5.50654,0,0,0,9,1.5Zm0,10A4.5,4.5,0,1,1,13.5,7,4.50491,4.50491,0,0,1,9,11.5ZM1.5,22V20A4.50491,4.50491,0,0,1,6,15.5h6A4.50491,4.50491,0,0,1,16.5,20v2a.5.5,0,0,1-1,0V20A3.50424,3.50424,0,0,0,12,16.5H6A3.50424,3.50424,0,0,0,2.5,20v2a.5.5,0,0,1-1,0Zm13-10a.49971.49971,0,0,1,.5-.5,4.5,4.5,0,0,0,0-9,.5.5,0,0,1,0-1,5.5,5.5,0,0,1,0,11A.49971.49971,0,0,1,14.5,12Zm7,10V20A3.50424,3.50424,0,0,0,18,16.5a.5.5,0,0,1,0-1A4.50491,4.50491,0,0,1,22.5,20v2a.5.5,0,0,1-1,0Z"/></svg></span><div><h3 style="font-size:17px;margin-bottom:4px">Como uma assistente atende o time</h3><p style="color:var(--txt);margin:0">A assistente tem o próprio número de WhatsApp e conversa com vários fornecedores de uma vez, mas mantém uma negociação por fornecedor. Se duas requisições precisam do mesmo fornecedor, a segunda entra na fila até a primeira terminar. O Fábio e o Gustavo usam a mesma assistente e o mesmo saldo. Se as obras pedirem mais paralelismo, uma segunda assistente entra a qualquer momento por R$ 400 por mês, sem mudar o pacote.</p></div></div>
     <div class="card dg-card--textura dg-t5 beta rv"><span class="beta-tag">Em breve · acesso antecipado</span><div class="beta-in"><span class="dg-icone"><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15,2.5H5A2.50263,2.50263,0,0,0,2.5,5V16a.49975.49975,0,0,0,.7998.3999L7.167,13.5H15A2.50263,2.50263,0,0,0,17.5,11V5A2.50263,2.50263,0,0,0,15,2.5ZM16.5,11A1.50164,1.50164,0,0,1,15,12.5H7a.4975.4975,0,0,0-.2998.1001L3.5,15V5A1.50164,1.50164,0,0,1,5,3.5H15A1.50164,1.50164,0,0,1,16.5,5Zm4,9V10A1.50164,1.50164,0,0,0,19,8.5v-1A2.50263,2.50263,0,0,1,21.5,10V21a.49975.49975,0,0,1-.7998.3999L16.833,18.5H9A2.50263,2.50263,0,0,1,6.5,16v-.12476l1-.75V16A1.50164,1.50164,0,0,0,9,17.5h8a.4975.4975,0,0,1,.2998.1001Z"/></svg></span><div><h3>Negociações simultâneas com o mesmo fornecedor</h3><p>Já estamos testando, com clientes selecionados, a assistente que negocia várias requisições com o mesmo fornecedor ao mesmo tempo. Quem já opera com a dgenny tem prioridade para ativar esse recurso como upgrade do plano, com a operação, a base de fornecedores e o histórico prontos para ganhar escala no primeiro dia.</p></div></div></div>
-    <p class="nota">Valores do contrato anual, cobrados por <b style="color:var(--rosa)">mês</b>. O saldo de negociações vale pelo contrato inteiro e pode ser usado conforme a demanda de cada mês, acompanhando o ritmo das obras. O contrato semestral custa 20% a mais. Assistentes adicionais podem entrar a qualquer momento, até o limite do plano, sem mudar o pacote: R$ 400 por mês no Essencial e R$ 350 no Equipe.</p>
+    <p class="nota">Valores do contrato anual, cobrados por <b style="color:var(--rosa)">mês</b>. O saldo de negociações vale pelo contrato inteiro e pode ser usado conforme a demanda de cada mês, acompanhando o ritmo das obras. O contrato semestral custa 20% a mais. Se o saldo acabar antes do fim, compram-se blocos de 50 negociações ao preço do plano.</p>
     <div class="card implant rv">
       <div>
         <span class="dg-icone"><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,1.5A10.5,10.5,0,1,0,22.5,12,10.51211,10.51211,0,0,0,12,1.5Zm0,1a9.45065,9.45065,0,0,1,6.344,2.449L15.51691,7.77606a5.48445,5.48445,0,0,0-7.03382,0L5.656,4.949A9.45065,9.45065,0,0,1,12,2.5ZM16.5,12A4.5,4.5,0,1,1,12,7.5,4.50491,4.50491,0,0,1,16.5,12Zm-14,0A9.45065,9.45065,0,0,1,4.949,5.656L7.77606,8.48309a5.48445,5.48445,0,0,0,0,7.03382L4.949,18.344A9.45065,9.45065,0,0,1,2.5,12ZM12,21.5a9.45065,9.45065,0,0,1-6.344-2.449l2.82708-2.82709a5.48445,5.48445,0,0,0,7.03382,0L18.344,19.051A9.45065,9.45065,0,0,1,12,21.5Zm7.051-3.156-2.82709-2.82708a5.48445,5.48445,0,0,0,0-7.03382L19.051,5.656a9.44145,9.44145,0,0,1,0,12.688Z"/></svg></span>
         <h3>Implantação: a Chiquetti &amp; Dalvesco começa operando, não configurando</h3>
-        <p style="color:var(--txt);margin:0">Um serviço feito uma única vez pelo nosso time, com valor conforme o cenário.</p>
+        <p style="color:var(--txt);margin:0">Um serviço feito uma única vez pelo nosso time.</p>
         <div class="vals">
-          <div data-impl="1"><span>Começar com uma · 1 assistente</span><b>R$ 6.000</b></div>
-          <div data-impl="2" class="sel"><span>Uma para cada um · 2 assistentes</span><b>R$ 6.000</b></div>
-          <div data-impl="3"><span>Espaço para crescer · 3 assistentes</span><b>R$ 6.000</b></div>
+          <div data-impl="1" class="sel"><span>1 assistente · as quatro obras</span><b><s class="impl-de">R$ 6.000</s> R$ 4.000</b></div>
         </div>
-        <p class="nota" style="margin-top:10px">Valor único para até 3 assistentes. Cada assistente ativada depois do início soma R$ 1.000.</p>
+        <p class="nota" style="margin-top:10px">Condição desta proposta: implantação de R$ 6.000 por R$ 4.000 para assinatura até 04/11/2026. Cada assistente ativada depois do início soma R$ 1.000.</p>
       </div>
       <ul>
         <li><svg aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,22.5A10.5,10.5,0,1,0,1.5,12,10.5118,10.5118,0,0,0,12,22.5Zm0-20A9.5,9.5,0,1,1,2.5,12,9.51081,9.51081,0,0,1,12,2.5ZM8.64648,12.35352a.5.5,0,0,1,.707-.707L11,13.293l3.64648-3.64649a.5.5,0,0,1,.707.707l-4,4a.49984.49984,0,0,1-.707,0Z"/></svg><span>Integração com o Sienge: as solicitações entram e o mapa de cotação volta para o Sienge</span></li>
@@ -679,7 +669,7 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
   <div class="wrap">
     <div class="cue"><b>Explicar o crédito sem confundir</b>
       <ul><li>Posicione: "A dgenny é task as a service. Vocês contratam conversas iniciadas e ganham todas estas tarefas incluídas."</li><li>Use o exemplo: uma cotação com 4 fornecedores consome 4 conversas. Todo o trabalho dentro delas já está incluído.</li>
-      <li>Traduza para as solicitações: "Quantas cotações saem das 200 a 300 solicitações do mês? O plano recomendado cobre cerca de 75 nesse formato."</li>
+      <li>Traduza para as solicitações: "Quantas cotações saem das 200 a 300 solicitações do mês? O plano cobre cerca de 60 nesse formato."</li>
       <li>Confirme: "Isso cobre o volume de vocês?"</li></ul></div>
     <div class="num"><b>6</b> O que está no plano</div>
     <h2>Você contrata conversas. <span class="dg-destaque">Ganha todas as tarefas incluídas.</span></h2>
@@ -693,7 +683,7 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
           <li>Follow-ups, dúvidas e negociação de preço, frete e prazo dentro dessa conversa: incluídos.</li>
           <li>Buscar fornecedores, montar o mapa e enviar ao Sienge: incluídos.</li>
         </ol>
-        <div class="ex"><b>Exemplo:</b> uma cotação enviada a 4 fornecedores consome 4 negociações. O plano recomendado cobre <b data-o="i_cot">cerca de 75 cotações por mês</b> nesse formato.</div>
+        <div class="ex"><b>Exemplo:</b> uma cotação enviada a 4 fornecedores consome 4 negociações. O plano proposto cobre <b data-o="i_cot">cerca de 63 cotações por mês</b> nesse formato.</div>
         <p class="nota">O saldo é do contrato inteiro. Se acabar antes do fim, compram-se blocos de 50 negociações ao preço do plano, sem mudar de plano. Reabrir a mesma negociação depois de 24 horas não conta como nova. O saldo não usado expira no fim do contrato.</p>
       </div>
       <div class="inc">
@@ -736,41 +726,41 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
     <div class="formula">
       <div class="card lado rv">
         <h3>O que volta por mês, para o time e para as obras</h3>
-        <div class="linha"><span>Horas de comprador liberadas</span><b data-o="r_horas">280 h</b></div>
-        <div class="linha"><span>Valor dessas horas</span><b data-o="r_tempo">R$ 8.018</b></div>
-        <div class="linha"><span data-o="r_dinTxt">Saving de 3% sobre R$ 1,6 milhão cotados</span><b data-o="r_din">R$ 48.000</b></div>
-        <div class="linha tot"><span>Retorno mensal</span><b data-o="r_ret">R$ 56.018</b></div>
+        <div class="linha"><span>Horas de comprador liberadas</span><b data-o="r_horas">60 h</b></div>
+        <div class="linha"><span>Valor dessas horas</span><b data-o="r_tempo">R$ 1.718</b></div>
+        <div class="linha"><span data-o="r_dinTxt">Saving de 3% sobre R$ 600 mil cotados, que fica com as obras</span><b data-o="r_din">R$ 18.000</b></div>
+        <div class="linha tot"><span>Retorno mensal</span><b data-o="r_ret">R$ 19.718</b></div>
       </div>
       <div class="sinal rv">&gt;</div>
       <div class="card lado rv">
         <h3>O que a Chiquetti &amp; Dalvesco investe</h3>
-        <div class="linha"><span data-o="r_planoTxt">Mensalidade, Equipe com 3 assistentes</span><b data-o="r_mens">R$ 5.250</b></div>
-        <div class="linha"><span>Implantação, uma vez</span><b data-o="r_impl">R$ 4.500</b></div>
+        <div class="linha"><span data-o="r_planoTxt">Mensalidade, Essencial com 1 assistente</span><b data-o="r_mens">R$ 3.000</b></div>
+        <div class="linha"><span>Implantação, uma vez</span><b data-o="r_impl">R$ 4.000</b></div>
         <div class="linha"><span>Horas do time no treinamento, uma vez</span><b data-o="r_onb">R$ 430</b></div>
-        <div class="linha tot"><span>Custo da mudança</span><b data-o="r_mud">R$ 4.930</b></div>
+        <div class="linha tot"><span>Custo da mudança</span><b data-o="r_mud">R$ 4.430</b></div>
       </div>
     </div>
     <div class="res">
-      <div class="kpi rv"><b data-o="r_x">10,7x</b><span>retorno mensal para cada real da mensalidade</span></div>
-      <div class="kpi rv"><b data-o="r_pb">~3 dias</b><span>para a implantação se pagar</span></div>
-      <div class="kpi rv"><b data-o="r_12">R$ 604 mil</b><span data-o="r_12txt">de ganho líquido em 12 meses</span></div>
+      <div class="kpi rv"><b data-o="r_x">6,6x</b><span>retorno mensal para cada real da mensalidade</span></div>
+      <div class="kpi rv"><b data-o="r_pb">~8 dias</b><span>para a implantação se pagar</span></div>
+      <div class="kpi rv"><b data-o="r_12">R$ 197 mil</b><span data-o="r_12txt">de ganho líquido em 12 meses: R$ 237 mil que deixam de ficar na mesa, menos R$ 40 mil investidos no ano (mensalidades e custo da mudança)</span></div>
     </div>
     <div class="ajustes rv"><b><svg aria-hidden="true" width="15" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16,5.5h2.91058A9.4877,9.4877,0,0,0,2.5,12a.5.5,0,0,1-1,0,10.49268,10.49268,0,0,1,18-7.33783V2a.5.5,0,0,1,1,0V6a.49971.49971,0,0,1-.5.5H16a.5.5,0,0,1,0-1Zm6,6a.49971.49971,0,0,0-.5.5A9.4877,9.4877,0,0,1,5.08942,18.5H8a.5.5,0,0,0,0-1H4a.49971.49971,0,0,0-.5.5v4a.5.5,0,0,0,1,0V19.33783A10.49268,10.49268,0,0,0,22.5,12,.49971.49971,0,0,0,22,11.5Z"/></svg> Ajuste com os números de vocês</b>
       <div class="campos">
         <label class="cp">Volume cotado pela dgenny por mês (R$)<input type="number" data-i="vol" value="600000" step="100000" min="0"></label>
         <label class="cp">Saving estimado (%)<input type="number" data-i="sav" value="3" step="0.5" min="0"></label>
-        <label class="cp">Cotações por mês no escopo<input type="number" data-i="cot" value="75" step="5" min="0"></label>
+        <label class="cp">Cotações por mês no escopo<input type="number" data-i="cot" value="60" step="5" min="0"></label>
         <label class="cp">Horas por cotação com a assistente<input type="number" data-i="hNova" value="2" step="0.5" min="0"></label>
         <label class="cp">Pessoas treinadas<input type="number" data-i="pess" value="3" step="1" min="1"></label>
       </div>
     </div>
-    <p class="nota" data-o="r_cob" style="margin-top:10px">70 cotações com 7 fornecedores pedem cerca de 490 negociações por mês. O plano escolhido cobre 500.</p>
+    <p class="nota" data-o="r_cob" style="margin-top:10px">60 cotações com 4 fornecedores pedem cerca de 240 negociações por mês. O plano escolhido cobre 250.</p>
     <table class="cen rv" aria-label="Cenários de retorno">
       <thead><tr><th>Cenário</th><th>Saving sobre o volume cotado</th><th>Horas liberadas por mês</th><th>Retorno mensal</th><th>Retorno por real</th></tr></thead>
       <tbody>
-        <tr class="real"><td><b>Conservador</b> · base desta proposta</td><td>3%</td><td data-o="r_horas">280 h</td><td data-o="s1r">R$ 56.018</td><td><b data-o="s1x">10,7x</b></td></tr>
-        <tr><td><b>Realista</b></td><td>5%</td><td data-o="r_horas">280 h</td><td data-o="s2r">R$ 88.018</td><td><b data-o="s2x">16,8x</b></td></tr>
-        <tr><td><b>Projetado</b></td><td>8%</td><td data-o="r_horas">280 h</td><td data-o="s3r">R$ 136.018</td><td><b data-o="s3x">25,9x</b></td></tr>
+        <tr class="real"><td><b>Conservador</b> · base desta proposta</td><td>3%</td><td data-o="r_horas">60 h</td><td data-o="s1r">R$ 19.718</td><td><b data-o="s1x">6,6x</b></td></tr>
+        <tr><td><b>Realista</b></td><td>5%</td><td data-o="r_horas">60 h</td><td data-o="s2r">R$ 31.718</td><td><b data-o="s2x">10,6x</b></td></tr>
+        <tr><td><b>Projetado</b></td><td>8%</td><td data-o="r_horas">60 h</td><td data-o="s3r">R$ 49.718</td><td><b data-o="s3x">16,6x</b></td></tr>
       </tbody>
     </table>
     <div class="card dg-card--textura dg-t5 prova rv">
@@ -793,8 +783,8 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
     <div class="num"><b>8</b> Próximo passo</div>
     <h2>Do aceite à primeira cotação <span class="dg-destaque">rodando</span></h2>
     <div class="etapas">
-      <div class="etapa agora rv"><b>Agora</b><h4>Escolha do cenário</h4><p>Quantas assistentes e qual volume entram primeiro.</p></div>
-      <div class="etapa rv"><b>Até 04/11</b><h4>Termo de Aceite</h4><p>Assinatura dentro da validade desta proposta.</p></div>
+      <div class="etapa agora rv"><b>Agora</b><h4>Decisão</h4><p>Plano Essencial, com a implantação por R$ 4.000.</p></div>
+      <div class="etapa rv"><b>Até 04/11</b><h4>Termo de Aceite</h4><p>Assinatura dentro da validade, com a condição de implantação garantida.</p></div>
       <div class="etapa rv"><b>Semana 1</b><h4>Kick-off</h4><p>Integração com o Sienge, WhatsApps e base de fornecedores.</p></div>
       <div class="etapa rv"><b>Semanas 2 a 4</b><h4>Primeiras cotações</h4><p>Go-live com as solicitações das quatro obras, com o processo atual em paralelo durante a implantação.</p></div>
       <div class="etapa rv"><b>Depois</b><h4>Primeira assembleia</h4><p>A economia das cotações pela dgenny já entra na prestação de contas do mês.</p></div>
@@ -815,8 +805,8 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
   <svg fill="currentColor" aria-hidden="true" class="dg-grafismo dg-grafismo--centro cta-ast" viewBox="0 0 158 159"  xmlns="http://www.w3.org/2000/svg"><path d="M140.81 62.1455L95.1728 74.3774C90.0026 75.7646 85.291 78.4815 81.5079 82.2646C77.7248 86.0476 75.0079 90.7593 73.6208 95.9295L61.3889 141.567L77.1631 145.797L89.0626 101.386L123.729 136.053L135.285 124.497L100.618 89.8307L145.029 77.9312L140.799 62.157L140.81 62.1455Z" fill="currentColor"/><path d="M96.6517 17.2302L84.4198 62.8677C83.0326 68.0379 80.3157 72.7496 76.5326 76.5326C72.7496 80.3157 68.0379 83.0326 62.8677 84.4198L17.2302 96.6517L13 80.8774L57.4109 68.978L22.7557 34.2998L34.3113 22.7443L68.978 57.4109L80.866 13L96.6402 17.2302H96.6517Z" fill="currentColor"/></svg>
   <div class="wrap">
     <h2>Qual obra <span class="dg-destaque">começa primeiro?</span></h2>
-    <p class="lead">Proposta válida até 04/11/2026. O Sávio acompanha a Chiquetti &amp; Dalvesco da escolha do cenário até a primeira cotação rodando.</p>
-    <a class="dg-botao dg-botao--destaque" href="mailto:savio.stang@dgenny.com.br?subject=Chiquetti%20%26%20Dalvesco%20-%20cen%C3%A1rio%20escolhido">Confirmar o cenário com o Sávio <svg aria-hidden="true" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.35352,12.35352l-6,6a.5.5,0,0,1-.707-.707L16.793,12.5H6a.5.5,0,0,1,0-1H16.793L11.64648,6.35352a.5.5,0,0,1,.707-.707l6,6A.49983.49983,0,0,1,18.35352,12.35352Z"/></svg></a>
+    <p class="lead">Proposta válida até 04/11/2026. O Sávio acompanha a Chiquetti &amp; Dalvesco do aceite até a primeira cotação rodando.</p>
+    <a class="dg-botao dg-botao--destaque" href="mailto:savio.stang@dgenny.com.br?subject=Chiquetti%20%26%20Dalvesco%20-%20aceite%20da%20proposta">Confirmar com o Sávio <svg aria-hidden="true" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.35352,12.35352l-6,6a.5.5,0,0,1-.707-.707L16.793,12.5H6a.5.5,0,0,1,0-1H16.793L11.64648,6.35352a.5.5,0,0,1,.707-.707l6,6A.49983.49983,0,0,1,18.35352,12.35352Z"/></svg></a>
   </div>
 </section>
 
@@ -832,8 +822,8 @@ html, body { background: #121325 !important; margin: 0 !important; padding: 0 !i
   root.classList.add('js');
   try { if (new URLSearchParams(location.search).has('roteiro')) root.classList.add('roteiro'); } catch(e) {}
 
-  var PLANOS = { 1:{n:1, nome:'Essencial', neg:250, preco:3000, impl:6000}, 2:{n:2, nome:'Essencial', neg:300, preco:4000, impl:6000}, 3:{n:3, nome:'Equipe', neg:500, preco:5250, impl:6000} };
-  var st = { plano:2 };
+  var PLANOS = { 1:{n:1, nome:'Essencial', neg:250, preco:3000, impl:4000} };
+  var st = { plano:1 };
   var HORAS_MES = 176, CONV_ASST = 500, FORN_DIG = 10;
 
   function brl(v, d){ return 'R$ ' + v.toLocaleString('pt-BR', {minimumFractionDigits:d||0, maximumFractionDigits:d||0}); }
